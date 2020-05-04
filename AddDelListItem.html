@@ -5,17 +5,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Shopping List</h1>
-    <p id="first">Get it done today</p>
-    <p class="second">Go ahead</p>
-    <ul>
-        <li class="bold red" random="23">Notebook</li>
-        <li>Jello</li>
-        <li>Spinach</li>
-        <li>Rice</li>
-        <li>Cake</li>
-        <li>Candles</li>
-    </ul>
+    <div class="container">
+      <div class="header text-center">
+        <h1>Shopping lists</h1>
+      </div>
+      <div class="row">
+        <div class="listInput col-md-5 col-sm-12">
+          <div id="inputArea">
+            <input id="userInput" type="text" placeholder="Add new item">
+            <button id="add" class="custBtn"><i class="fas fa-angle-right"></i></button>
+          </div>
+        </div>
+        <div class="mainList col-md-7 col-sm-12">
+          <ul>
+            <h2 class="empty text-center">Empty List</h2>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
