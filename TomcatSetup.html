@@ -1,0 +1,22 @@
+<Download Tomcat>
+Go to <a herf = "http://tomcat.apache.org/">http://tomcat.apache.org/</a>
+Download -> Tomcat 9
+Binary Distributions -> <a herf = "http://ftp.mirror.tw/pub/apache/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35-windows-x64.zip" >Core: 64-bit Windows zip (pgp, sha512)</a>
+
+<Start Tomcat Server>
+Unzip to D:\Apps\apache-tomcat-9.0.35 (any location you'd like)
+Get into \bin directory (D:\Apps\apache-tomcat-9.0.35\bin)
+Double click startup.bat file => Server Connecting
+Type <a herf = "http://localhost:8080/">localhost:8080</a> on the address bar of your Browser
+if it shows Apache Tomcat/9.0.35 page, it means you've setup the server successfully.
+
+<Settings of Tomcat>
+1.set path and environment variables (follow the step of : <a herf ="https://www.computerhope.com/issues/ch000549.htm">https://www.computerhope.com/issues/ch000549.htm</a>)
+  Variable: JAVA_HOME, value: C:\Program Files\Java\jdk1.8.0_241 (the directory of JAVA JDK)
+2.Get into \conf of Tomcat directory (D:\Apps\apache-tomcat-9.0.35\conf)
+  a. \conf -> server.xml open with an editor -> find 'port="8080"' change 8080 into 9999 (the number you'd like)
+  b. If garbled messages show on Tomcat Server window, right click on top bar -> content -> current character coding page (eg. Big5)
+     \conf -> logging.properties file open with an editor -> "java.util.logging.ConsoleHandler.encoding = UTF-8" -> change UTF-8 to Big5
+3.use ctrl+C in Tomcat Server window to shutdown server, then restart again and you'll see the change applied
+  
+  
